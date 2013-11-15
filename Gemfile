@@ -45,12 +45,13 @@ end
 # gem 'debugger', group: [:development, :test]
 
   gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
-
+  gem 'devise', '~> 3.1.1' #this is the latest version and has been updated since the video
+  
   group :development, :test do
      gem 'sqlite3'
   end
 
-group :production do
+  group :production do
      gem 'pg'
      gem 'rails_12factor'
-end
+  end
