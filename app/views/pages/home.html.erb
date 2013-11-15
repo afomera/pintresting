@@ -1,7 +1,8 @@
 <div class="jumbotron center">
 	<h1>Welcome to Pintresting!</h1>
 		<% if user_signed_in? %>
-          # do something
+            <%= link_to "Pins", pins_path %>
+                 # do something
    		 <% else %>
 			<p>
 			 <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
